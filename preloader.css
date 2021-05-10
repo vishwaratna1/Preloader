@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #333;
+  font-family: 'Dancing Script', cursive;
+}
+
+.name {
+  width: 300px;
+  height: 80px;
+  margin: auto;
+  font-size: 45px;
+  color: azure;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  position: relative;
+  top: 150px;
+  animation: name 2s linear 1;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  margin: 150px auto 50px auto;
+}
+
+.loader1 {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border: 5px #27E5B5 solid;
+  box-shadow: 2px 2px 4px #000000;
+  animation: sq 4.5s linear infinite alternate;
+}
+
+.loader2 {
+  width: 60px;
+  height: 60px;
+  margin: 30px auto;
+  box-shadow: 2px 2px 4px #000000;
+  position: relative;
+  top: -110px;
+  border: 5px #fff solid;
+  animation: sq 3.5s linear infinite alternate;
+}
+
+.loader3 {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  box-shadow: 2px 2px 4px #000000;
+  position: relative;
+  top: -200px;
+  border: 5px #27E5B5 solid;
+  animation: sq 3s linear infinite alternate;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 30px;
+  border: 3px #fff solid;
+  margin: 0 auto;
+  box-shadow: 2px 2px 4px #000000;
+  position: relative;
+  top: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.elem {
+  width: 99%;
+  height: 25px;
+  background-color: #27E5B5;
+  box-shadow: 2px 2px 4px #000000;
+  border: 2px #333 solid;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  animation: loader-bg 2s linear 1;
+}
+
+.loading {
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 2px 2px 4px #000000;
+  top: 20px;
+  animation: load 1s linear 1;
+}
+
+
+@keyframes sq {
+  0% {transform: scale(0); opacity: 0}
+  25% {transform: scale(1); opacity: 1}
+  50% {transform: rotate(360deg);}
+  100% {{transform: scale(0); opacity: 0}}
+}
+
+@keyframes name {
+  0% {top: -100px;}
+  20% {top:160px;}
+  50% {top: 140px;}
+  60% {top: 155px;}
+  70% {top: 145px;}
+  80% {top: 153px}
+  90% {top: 142px;}
+  100% {top: 150px;}
+}
+
+@keyframes loader-bg {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes load {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #000
+  }
+}
